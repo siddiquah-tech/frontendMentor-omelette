@@ -57,7 +57,7 @@ body {
 }
 
 .info p {
-    font-size: 12px;
+    font-size: 13px;
     color: #7f7e7b;
     margin-top: 20px;
     line-height: 20px;
@@ -95,7 +95,7 @@ body {
 }
 
 .ingredients h1{
-    font-size: 25px;
+    font-size: 27px;
     font-family: "PT Serif", serif;
     font-weight: bold;
     color: #7F4731;
@@ -114,7 +114,7 @@ body {
 }
 
 .Instructions h1{
-    font-size: 25px;
+    font-size: 27px;
     font-family: "PT Serif", serif;
     font-weight: bold;
     color: #7F4731;
@@ -146,7 +146,7 @@ hr {
 }
 
 .Nutrition h1{
-    font-size: 25px;
+    font-size: 27px;
     font-family: "PT Serif", serif;
     font-weight: bold;
     color: #7F4731;
@@ -156,7 +156,7 @@ hr {
 .Nutrition p{
     font-size: 13px;
     color: #7f7e7b;
-    margin-top: 20px;
+    margin-top: 15px;
     line-height: 20px;
     font-weight: 400;
     font-family: "Roboto", sans-serif;
@@ -164,69 +164,52 @@ hr {
 
 .Nutrition table {
     width: 100%;
-    border-collapse: collapse;
+    padding: 20px;
     margin-top: 20px;
 }
 
-.Nutrition table td {
-    padding: 15px 0;
-    border-bottom: 1px solid #d6d6d4;
-    font-size: 13px;
-    color: #7F4731;
-    font-weight: bold;
+.Nutrition table {
+    width: 100%;
+    padding: 20px;
+    border-collapse: collapse;
 }
 
-.Nutrition table tr:last-child td {
-    border-bottom: none;
-}
-
-.Nutrition table tr .tdmain {
+.Nutrition table td{
+    padding: 10px 0px 10px 30px;
+    border-bottom: 1px solid #dcdad9;
     color: #7f7e7b;
-    padding-left: 20px;
-    font-weight: 400;
+    font-size: 13px;
 }
+
+.lastTable {
+    padding: 0 20px;
+}
+
+.Nutrition table td:last-child{
+    color: #7F4731;
+    font-weight: 600;
+}
+
+.Nutrition table tr:last-child td{
+    border-bottom: 0;
+}
+
 
 @media (max-width: 650px) {
     .container {
-      width: 100%;
-      padding: 0px;
-      margin: 0;
-      border-radius: 0;
-
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        border-radius: 0;
     }
-
     .img-container,
-    .content,
     .img {
-      width: 100%;
-      border-radius: 0;
-
-    }
-  
-    .img-container {
-      height: 200px;
-      border-radius: 0;
-
+        width: 100%;
+        border-radius: 0;
     }
 
     .content {
+        width: 100%;
         padding: 30px;
     }
-  
-    .info h1,
-    .ingredients h1,
-    .Instructions h1,
-    .Nutrition h1 {
-      font-size: 22px;
-    }
-  
-    .info p,
-    .prepTime ul li,
-    .ingredients ul li,
-    .Instructions ol li,
-    .Nutrition p,
-    .Nutrition table td {
-      font-size: 12px;
-    }
-  }
-  
+}
