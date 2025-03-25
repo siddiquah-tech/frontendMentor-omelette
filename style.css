@@ -1,0 +1,232 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #32312F;
+    font-family: "Roboto", sans-serif;
+}
+
+body {
+    background-color: #F3E5D7;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+.container {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 18px;
+}
+
+.img-container {
+    height: 250px;
+    width: 600px;
+    background-color: red;
+    border-radius: 18px;
+}
+
+.img {
+    background-image: url(image-omelette.jpeg);
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 18px;
+}
+
+.content {
+    width: 600px;
+}
+
+.info h1 {
+    font-size: 27px;
+    font-family: "PT Serif", serif;
+    font-weight: bold;
+    color: #32312F;
+    margin-top: 20px;
+}
+
+.info p {
+    font-size: 12px;
+    color: #7f7e7b;
+    margin-top: 20px;
+    line-height: 20px;
+    font-family: "Roboto", sans-serif;
+}
+
+.prepTime {
+    background-color: #FFF6FB;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 18px;
+
+}
+
+.prepTime h1 {
+    font-size: 18px;
+    color: #893e60;
+    font-weight: 500;
+}
+
+.prepTime ul  {
+    padding: 14px;
+}
+
+.prepTime ul li {
+    font-size: 13px;
+    color: #7f7e7b;
+    font-weight: 400;
+    padding: 5px;
+}
+
+.prepTime ul li span{
+    color: #62605d;
+    font-weight: 800;
+}
+
+.ingredients h1{
+    font-size: 25px;
+    font-family: "PT Serif", serif;
+    font-weight: bold;
+    color: #7F4731;
+    margin-top: 20px;
+}
+
+.ingredients ul {
+    padding: 18px;
+}
+
+.ingredients ul li{
+    padding: 7px;
+    font-size: 13px;
+    color: #7f7e7b;
+
+}
+
+.Instructions h1{
+    font-size: 25px;
+    font-family: "PT Serif", serif;
+    font-weight: bold;
+    color: #7F4731;
+    margin-top: 20px;
+}
+
+.Instructions ol {
+    padding: 18px;
+}
+
+.Instructions ol li{
+    padding: 7px;
+    font-size: 13px;
+    color: #7f7e7b;
+}
+
+.Instructions ol li span{
+    color: #62605d;
+    font-weight: 800;
+}
+
+.Instructions ol li::marker {
+    color: #7F4731;
+    font-weight: 800;
+}
+
+hr {
+    border: 0.5px solid #d6d6d4;
+}
+
+.Nutrition h1{
+    font-size: 25px;
+    font-family: "PT Serif", serif;
+    font-weight: bold;
+    color: #7F4731;
+    margin-top: 20px;
+}
+
+.Nutrition p{
+    font-size: 13px;
+    color: #7f7e7b;
+    margin-top: 20px;
+    line-height: 20px;
+    font-weight: 400;
+    font-family: "Roboto", sans-serif;
+}
+
+.Nutrition table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.Nutrition table td {
+    padding: 15px 0;
+    border-bottom: 1px solid #d6d6d4;
+    font-size: 13px;
+    color: #7F4731;
+    font-weight: bold;
+}
+
+.Nutrition table tr:last-child td {
+    border-bottom: none;
+}
+
+.Nutrition table tr .tdmain {
+    color: #7f7e7b;
+    padding-left: 20px;
+    font-weight: 400;
+}
+
+@media (max-width: 650px) {
+    .container {
+      width: 100%;
+      padding: 0px;
+      margin: 0;
+      border-radius: 0;
+
+    }
+
+    .img-container,
+    .content,
+    .img {
+      width: 100%;
+      border-radius: 0;
+
+    }
+  
+    .img-container {
+      height: 200px;
+      border-radius: 0;
+
+    }
+
+    .content {
+        padding: 30px;
+    }
+  
+    .info h1,
+    .ingredients h1,
+    .Instructions h1,
+    .Nutrition h1 {
+      font-size: 22px;
+    }
+  
+    .info p,
+    .prepTime ul li,
+    .ingredients ul li,
+    .Instructions ol li,
+    .Nutrition p,
+    .Nutrition table td {
+      font-size: 12px;
+    }
+  }
+  
